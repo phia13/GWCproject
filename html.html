@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>BlissBot</title>
+  <div class="wrapper"></div>
+  <link rel="stylesheet" href="finalcss.css">
+  <script src="finaljava.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 25px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.containerTab {
+    padding: 20px;
+    color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+</style>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+</style>
+
+</head>
+
+<body>
+  <center><h1>BlissBot</h2></center>
+
+<font face="Titillium Web">
+
+  <!-- Tab links -->
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Welcome')"><font color="white">Welcome</font></button>
+    <button class="tablinks" onclick="openCity(event, 'Chatbot')"><font color="white">Chatbot</font></button>
+    <button class="tablinks" onclick="openCity(event, 'Resources and Hotlines')"><font color="white">Resources and Hotlines</font></button>
+    <button class="tablinks" onclick="openCity(event, 'About Us')"><font color="white">About Us</font></button>
+    <button class="tablinks" onclick="openCity(event, 'Sources')"><font color="white">Sources</font></button>
+  </div>
+
+  <!-- Tab content -->
+<div id="Welcome" class="tabcontent" style=display:block>
+  <h2>Welcome</h2>
+  <p>
+  Hello! Welcome to BlissBot!
+  </p>
+  Disclaimer: BlissBot is just a tool used to provide comfort. It does not replace an actual therapist, so please reach out for help if you feel you are really struggling. Resources will be provided in the "Resources and Hotlines" tab.
+  <p>
+  </br>
+  I’ll tell you a little about two of the most common mental illnesses:
+  </p>
+  <b>Depression</b> is a common medical illness that affects how you feel, think and act. Some symptoms include feeling sad, loss of interest in activities once enjoyed, feeling invaluable, and more. Everyone has different experiences with depression so try not to compare yourself to others!
+  </p>
+  <p>
+  Occasional feelings of anxiousness are common for most people, however, <b>anxiety</b> involves excessive fear and anxiousness. Anxiety disorders can cause people to avoid situations that trigger or worsen their symptoms. In order to be diagnosed with an anxiety disorder, the feeling of anxiety must be out of proportion of the situation and hinder your ability to function normally. Once again, this is normal! And, everyone’s experience with anxiety varies!
+  </p>
+
+  <div class="slideshow-container">
+
+<div class="mySlides">
+  <q>Happiness can be found even in the darkest of times, if one only remembers to turn on the light.</q>
+  <p class="author">- Albus Dumbledore from <i>Harry Potter and the Prisoner of Azkaban</i> </p>
+</div>
+
+<div class="mySlides">
+  <q>The most beautiful people we have known are those who have known defeat, known suffering, known struggle, known loss, and have found their way out of the depths. These persons have an appreciation, a sensitivity, and an understanding of life that fills them with compassion, gentleness, and a deep loving concern. Beautiful people do not just happen.</q>
+  <p class="author">- Elisabeth Kübler-Ross from <i>Death: The Final Stage of Growth</i></p>
+</div>
+
+<div class="mySlides">
+  <q>Your illness is not your identity. Your chemistry is not your character.</q>
+  <p class="author">- Pastor Rick Warren</p>
+</div>
+
+<div class="mySlides">
+  <q>Even if we don’t have the power to choose where we come from, we can still choose where we go from there.</q>
+  <p class="author">- Charlie from <i>The Perks of Being a Wallflower</i></p>
+</div>
+
+<div class="mySlides">
+  <q>You are valuable just because you exist. Not because of what you do or what you have done, but simply because you are.</q>
+  <p class="author">- Max Lucado from <i>No Wonder They Call Him the Savior</i></p>
+</div>
+
+<div class="mySlides">
+  <q>Your now is not your forever.</q>
+  <p class="author">- <i>Turtles All The Way Down</i> by John Green</p>
+</div>
+
+<div class="mySlides">
+  <q>But I know that I spent a long time existing, and now I intend to live.</q>
+  <p class="author">- <i>An Ember in the Ashes</i> by Sabaa Tahir</p>
+</div>
+
+<div class="mySlides">
+  <q>Do not be afraid of what makes you shine brightly.</q>
+  <p class="author">- <i>Empire of Storms</i> by Sarah J. Maas</p>
+</div>
+
+<div class="mySlides">
+  <q>Hope is a powerful thing. Some say it’s a different breed of magic altogether.</q>
+  <p class="author">- <i>Caraval</i> by Stephanie Garber</p>
+</div>
+
+<div class="mySlides">
+  <q>Brave doesn’t mean you’re not scared. It means you go on even though you’re scared.</q>
+  <p class="author">- <i>The Hate U Give</i> by Angie Thomas</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</div>
+
+  <div id="Chatbot" class="tabcontent">
+    <h2>BlissBot</h2>
+    <p>If you're feeling lonely, just talk to your new friend, BlissBot! All you have to do is type your answers to their questions. If you want to start a new conversation, just click the start/stop button on the top left. BlissBot is always here to talk to you!</p>
+    <p><iframe src="https://trinket.io/embed/python/16287ad167?outputOnly=true&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe></p>
+  </div>
+
+  <div id="Resources and Hotlines" class="tabcontent">
+    <h2>Resources and Hotlines</h2>
+    <p><h3>Suicide</h3>
+    1-800-273-8255 (Suicide Prevention Lifeline)</br>
+    1-800-784-8433 (USA Suicide Hotline)
+    </p>
+    <p><h3>Teen Lines</h3>
+      1-310-855-HOPE (4673)</br>
+      1-800-TLC-TEEN (852-8336)
+    </p>
+    <p><h3>Anxiety and Depression Specifically</h3>
+    1-630-482-9696 (Depression Hotline)</br>
+    240-485-1001 (Anxiety and Depression Association of America ADAA)
+    </p>
+    <p><h3>General</h3>
+    1-800-950-NAMI (6264) (National Alliance on Mental Illness NAMI Helpline)</br>
+    <a href="https://www.psychologytoday.com/us?tr=Hdr_Brand" target="_blank">Find a therapist in your area</a></br>
+    <a href="https://www.nami.org/learn-more/mental-health-conditions" target="_blank">Research further on multiple mental illnesses</a>
+    </p>
+  </div>
+
+<div id="Sources" class="tabcontent">
+<h2>Code Sources</h2>
+</br>
+<a href="https://codepen.io/nohoid/pen/kIfto" target="_blank">Rainbow Gradient</a>
+</br>
+<a href="https://trinket.io/" target="_blank">Trinket Modular</a>
+</br>
+<a href="https://www.w3schools.com/howto/howto_js_tabs.asp" target="_blank">Making Tabs</a>
+</br>
+<a href="https://stackoverflow.com/questions/21769137/how-to-center-css-tabs" target="_blank">Centering Tabs</a>
+</br>
+<a href="https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp" target="_blank">Making a Quotes Slideshow</a>
+</br>
+<a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_expanding_grid" target="_blank">Making Expanding Grids (for the About Us page)</a>
+
+<h2>Research Sources</h2>
+<div> <a href="https://www.webmd.com/depression/default.htm" target="_blank">"Depression Help Center" by WebMD</a> </div>
+<div> <a href="https://www.psychiatry.org/patients-families/depression/what-is-depression" target="_blank">"What Is Depression?<" by American Psychiatric Association</a> </div>
+<div>
+<a href="https://www.verywellmind.com/what-to-say-when-someone-is-depressed-1067474" target="_blank">"What to Say When Someone Is Depressed" by Very Well Mind</a> </div>
+<div> <a href="https://adaa.org/about-adaa/press-room/facts-statistics" target="_blank">"Facts and Statistics" by Anxiety and Depression Association of America</a> </div>
+<div> <a href="https://www.mentalhelp.net/articles/anxiety-hotline/" target="_blank">"Anxiety Hotline Number" by MentalHelp.net</a> </div>
+<div> <a href="https://www.nami.org/find-support/nami-helpline/top-25-helpline-resources" target="_blank">"Top 25 HelpLine Resources" by National Alliance on Mental Illness</a> </div>
+<div> <a href="https://www.healthline.com/health/depression/facts-statistics-infographic#1" target="_blank">"Depression: Facts, Statistics, and You" by Healthline</a> </div>
+<div> <a href="https://themighty.com/2016/02/25-quotes-everyone-with-a-mental-illness-should-hear/" target="_blank">"25 Quotes Everyone With a Mental Illness Should Hear" by The Mighty</a> </div>
+<div> <a href="http://www.epicreads.com/blog/comforting-mental-health-quotes/" target="_blank">14 Comforting Mental Health Quotes to Get You Through the Day" by Epicreads</a></div>
+
+</div>
+
+  <div id="About Us" class="tabcontent">
+  <h2>About Us</h2>
+
+  <div style="text-align:center">
+    <p>Click on the boxes below:</p>
+  </div>
+
+  <!-- Three columns -->
+  <font face="Titillium Web">
+  <div class="row">
+    <div class="column" onclick="openTab('b1');" style="background:#111111;">
+      Brianna
+    </div>
+    <div class="column" onclick="openTab('b2');" style="background:#212121;">
+      Deysi
+    </div>
+    <div class="column" onclick="openTab('b3');" style="background:#303030;">
+      Renuka
+    </div>
+    <div class="column" onclick="openTab('b4');" style="background:#424242;">
+      Sophia
+    </div>
+  </div>
+  </face>
+
+  <!-- Full-width columns: (hidden by default) -->
+  <div id="b1" class="containerTab" style="display:none;background:#111111">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <h2>Brianna</h2>
+    <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+  </div>
+
+  <div id="b2" class="containerTab" style="display:none;background:#212121">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <h2>Deysi</h2>
+    <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+  </div>
+
+  <div id="b3" class="containerTab" style="display:none;background:#303030">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <h2>Renuka</h2>
+    <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+  </div>
+
+  <div id="b4" class="containerTab" style="display:none;background:#424242">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <h2>Sophia</h2>
+    <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+  </div>
+
+  <script>
+  function openTab(tabName) {
+    var i, x;
+    x = document.getElementsByClassName("containerTab");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+  }
+  </script>
+</div>
+
+</font>
+</body>
+</html>
